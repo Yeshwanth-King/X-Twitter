@@ -3,21 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <link href="./src/output.css" rel="stylesheet" />
-    <link
-      rel="shortcut icon"
-      href="https://twitter.com/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./img/X.png" type="image/x-icon" />
     <title>X</title>
   </head>
   <body class="bg-black text-white">
-    <div class="container mx-auto flex flex-row w-full">
-      <div class="first w-[70%] p-3">
+    <div class="container mx-0 2xl:mx-auto flex flex-row w-full">
+      <div
+        class="first md:w-[10%] lg:w-[8%] 2xl:w-[50%] 2xl:p-3 h-[100vh] overflow-auto custom-content custom-scrollbar hidden md:block"
+      >
         <div class="logo flex justify-strat mb-7 pl-[8px]">
           <svg
             viewBox="0 0 24 24"
@@ -34,31 +40,32 @@
         <div class="sidebar flex justify-start px-[-10px]">
           <ul class="flex flex-col align-top text-xl w-1/2 space-y-4 font-bold">
             <li
-              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer"
+              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer transition delay-100 duration-600 ease-out"
             >
-              <span class="material-symbols-outlined text-3xl"> home </span>Home
+              <span class="material-symbols-outlined text-3xl"> home </span
+              ><span class="hidden 2xl:block"> Home </span>
             </li>
             <li
-              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer"
+              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer transition delay-100 duration-600 ease-out"
             >
               <span class="material-symbols-outlined text-3xl"> search </span
-              >Explore
+              ><span class="hidden 2xl:block"> Explore </span>
             </li>
             <li
-              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer"
+              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer transition delay-100 duration-600 ease-out"
             >
               <span class="material-symbols-outlined text-3xl">
                 notifications </span
-              >Notifications
+              ><span class="hidden 2xl:block"> Notifications </span>
             </li>
             <li
-              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer"
+              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer transition delay-100 duration-600 ease-out"
             >
               <span class="material-symbols-outlined text-3xl"> mail </span
-              >Messages
+              ><span class="hidden 2xl:block"> Messages </span>
             </li>
             <li
-              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer"
+              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer transition delay-100 duration-600 ease-out"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -80,28 +87,28 @@
                     </clipPath>
                   </defs>
                 </g></svg
-              >Grok
+              ><span class="hidden 2xl:block"> Grok </span>
             </li>
             <li
-              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer"
+              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer transition delay-100 duration-600 ease-out"
             >
               <span class="material-symbols-outlined text-3xl"> list_alt </span
-              >Lists
+              ><span class="hidden 2xl:block"> Lists </span>
             </li>
             <li
-              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer"
+              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer transition delay-100 duration-600 ease-out"
             >
               <span class="material-symbols-outlined text-3xl"> bookmark </span
-              >Bookmark
+              ><span class="hidden 2xl:block"> Bookmark </span>
             </li>
             <li
-              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer"
+              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer transition delay-100 duration-600 ease-out"
             >
               <span class="material-symbols-outlined text-3xl"> group </span
-              >Communities
+              ><span class="hidden 2xl:block"> Communities </span>
             </li>
             <li
-              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer"
+              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer transition delay-100 duration-600 ease-out"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -114,32 +121,80 @@
                   ></path>
                 </g>
               </svg>
-              Premium
+              <span class="hidden 2xl:block"> Premium </span>
             </li>
             <li
-              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer"
+              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer transition delay-100 duration-600 ease-out"
             >
               <span class="material-symbols-outlined text-3xl"> person </span
-              >Profile
+              ><span class="hidden 2xl:block"> Profile </span>
             </li>
             <li
-              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer"
+              class="flex justify-start items-center gap-5 w-fit px-3 py-2 border-0 rounded-3xl border-r-slate-800 hover:bg-slate-800 hover:cursor-pointer transition delay-100 duration-600 ease-out"
             >
               <span class="material-symbols-outlined text-3xl"> pending </span
-              >More
+              ><span class="hidden 2xl:block"> More </span>
             </li>
           </ul>
         </div>
         <button
-          class="bg-blue-500 text-white font-bold mt-3 px-[100px] py-4 rounded-full"
+          class="bg-blue-500 text-white font-bold 2xl:mt-3 2xl:px-[100px] 2xl:py-4 rounded-full hidden lg:block px-[14px] py-3 ml-1"
         >
-          Post
+          <i class="fa-solid fa-feather-pointed 2xl:hidden block"></i>
+
+          <span class="hidden 2xl:block">Post</span>
         </button>
+
+        <div
+          class="hidden gap-2 mt-4 2xl:flex cursor-pointer hover:bg-gray-800 w-60 rounded-full p-2"
+        >
+          <div class="pic flex w-12">
+            <img class="rounded-full" src="./img/me.png" alt="" />
+          </div>
+          <div class="flex flex-col">
+            <div class="info font-bold text-base">
+              <span>YESHWANTH R</span>
+              <span class="material-symbols-outlined text-base"> lock </span>
+            </div>
+            <div>
+              <span class="text-sm text-gray-500">@YESHWANTH_KING</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="second border-[2px] border-y-0 border-x-gray-700 w-full">
-        <div class="top flex border-y-[2px] border-gray-700">
+      <div
+        class="second p-0 border-[2px] border-y-0 border-x-gray-700 w-full h-[892px] md:h-[100vh] overflow-auto custom-content custom-scrollbar"
+      >
+        <div
+          class="md:hidden p-2 mt-2 flex justify-between items-center h-[4vh]"
+        >
+          <div class="img">
+            <img class="w-10 rounded-full" src="./img/me.png" alt="" />
+          </div>
+          <div class="logo">
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="w-10 r-4qtqp9 invert r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+            >
+              <g>
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="settings h-auto p-3 px-5 cursor-pointer md:hidden">
+            <span class="material-symbols-outlined text-2xl hover:bg-zinc-800">
+              settings
+            </span>
+          </div>
+        </div>
+        <div
+          class="top flex border-b-[2px] border-gray-700 opacity-80 sticky top-0 bg-black"
+        >
           <div
-            class="w-[50%] left flex justify-center h-auto hover:cursor-pointer hover:bg-zinc-800 relative"
+            class="w-[50%] left flex justify-center py-3 h-auto hover:cursor-pointer hover:bg-zinc-800"
           >
             For you
             <div
@@ -147,20 +202,413 @@
             ></div>
           </div>
           <div
-            class="w-[50%] flex justify-center h-auto hover:cursor-pointer hover:bg-zinc-800 right"
+            class="w-[50%] flex justify-center py-3 h-auto hover:cursor-pointer hover:bg-zinc-800 right"
           >
             Following
           </div>
-          <div class="settings h-auto">
-            <span class="material-symbols-outlined text-3xl"> settings </span>
+          <div class="settings h-auto p-3 px-5 cursor-pointer hidden md:block">
+            <span class="material-symbols-outlined text-2xl hover:bg-zinc-800">
+              settings
+            </span>
           </div>
         </div>
+        <div class="hidden md:block">
+          <div class="whatisapp flex space-x-5">
+            <div class="img">
+              <img class="w-10 rounded-full m-5" src="/img/me.png" alt="" />
+            </div>
+            <input
+              class="w-full bg-black text-white text-xl outline-none"
+              type="text"
+              placeholder="What is happening?!"
+            />
+          </div>
+          <div
+            class="flex justify-start items-center pl-[60px] mx-4 border-b-[2px] border-gray-700 pb-2"
+          >
+            <div
+              class="flex justify-start items-center gap-2 border-none rounded-xl px-1 hover:bg-blue-300/40 transition duration-300"
+            >
+              <span
+                class="material-symbols-outlined text-xl text-blue-500 cursor-pointer"
+              >
+                globe
+              </span>
+              <span class="text-l text-blue-500 cursor-pointer font-bold"
+                >Everyone can reply</span
+              >
+            </div>
+          </div>
+          <div
+            class="botm flex justify-between items-center px-3 pb-3 border-b-[2px] border-gray-700"
+          >
+            <div class="ml-[60px] flex gap-5">
+              <span
+                class="material-symbols-outlined text-xl text-blue-500 cursor-pointer"
+              >
+                image
+              </span>
+              <span
+                class="material-symbols-outlined text-xl text-blue-500 cursor-pointer"
+              >
+                gif_box
+              </span>
+              <span
+                class="material-symbols-outlined text-xl text-blue-500 cursor-pointer"
+              >
+                toc
+              </span>
+              <span
+                class="material-symbols-outlined text-xl text-blue-500 cursor-pointer"
+              >
+                mood
+              </span>
+              <span
+                class="material-symbols-outlined text-xl text-blue-500 cursor-pointer"
+              >
+                event
+              </span>
+              <span
+                class="material-symbols-outlined text-xl text-blue-500 opacity-75 cursor-pointer"
+              >
+                location_on
+              </span>
+            </div>
+            <div class="flex justify-center items-center">
+              <button
+                class="bg-blue-500 text-white font-bold px-7 py-2 rounded-full opacity-25"
+              >
+                Post
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hidden md:flex justify-center items-center py-2 border-b-[2px] border-gray-700"
+        >
+          <a class="text-blue-500" href="#">Show 200 posts</a>
+        </div>
+        <div class="posts">
+          <div class="post1 flex flex-row gap-2 border-b-[2px] border-gray-700">
+            <div>
+              <div class="username">
+                <div class="profile">
+                  <img
+                    src="./img/me.png"
+                    class="w-[50px] rounded-full m-2"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <div class="user pt-3 flex gap-1 justify-start items-center">
+                <div
+                  class="font-bold flex justify-start items-center hover:underline px-3"
+                >
+                  Yeshwanth R
+                  <svg
+                    viewBox="0 0 22 22"
+                    aria-label="Verified account"
+                    role="img"
+                    class="r-4qtqp9 w-[16px] r-yyyyoo r-1xvli5t r-bnwqim r-1plcrui r-lrvibr r-1cvl2hr r-f9ja8p r-og9te1 r-9cviqr"
+                    data-testid="icon-verified"
+                  >
+                    <g>
+                      <path
+                        fill="#1DA1F2"
+                        d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="text-gray-600 text-sm">@Yeshwanth_King</div>
+                <div class="text-gray-600 text-sm">·</div>
+                <div class="text-gray-600 text-sm">May 05</div>
+              </div>
+              <div class="pl-3 flex gap-1 justify-start items-center">
+                Programmers do you know the answer &#128514;&#128514;??
+              </div>
+              <div class="imgpost">
+                <img
+                  class="p-2 rounded-[30px] w-full"
+                  src="./img/post1.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="likes flex justify-between p-2">
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-regular fa-comment text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">398</p>
+                </div>
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-solid fa-retweet text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">78</p>
+                </div>
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-regular fa-heart text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">661</p>
+                </div>
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-solid fa-chart-simple text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">3.2M</p>
+                </div>
+                <div class="comment flex items-center gap-2">
+                  <i
+                    class="fa-regular fa-bookmark text-gray-500 cursor-pointer text-l mr-1"
+                  >
+                  </i>
+                  <i
+                    class="fa-solid fa-arrow-up-from-bracket text-gray-500 cursor-pointer text-l mr-1"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post1 flex flex-row gap-2 border-b-[2px] border-gray-700">
+            <div>
+              <div class="username">
+                <div class="profile">
+                  <img
+                    src="./img/vir.jpg"
+                    class="w-[50px] rounded-full m-2"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <div class="user pt-3 flex gap-1 justify-start items-center">
+                <div
+                  class="font-bold flex justify-start items-center hover:underline px-3"
+                >
+                  Lokesh
+                  <svg
+                    viewBox="0 0 22 22"
+                    aria-label="Verified account"
+                    role="img"
+                    class="r-4qtqp9 w-[16px] r-yyyyoo r-1xvli5t r-bnwqim r-1plcrui r-lrvibr r-1cvl2hr r-f9ja8p r-og9te1 r-9cviqr"
+                    data-testid="icon-verified"
+                  >
+                    <g>
+                      <path
+                        fill="#1DA1F2"
+                        d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="text-gray-600 text-sm">@_itzz_loki</div>
+                <div class="text-gray-600 text-sm">·</div>
+                <div class="text-gray-600 text-sm">April 05</div>
+              </div>
+              <div class="pl-3 flex gap-1 justify-start items-center">
+                If you can solve this, you get a prize in the DM’s
+              </div>
+              <div class="imgpost">
+                <img
+                  class="p-2 rounded-[30px] w-full"
+                  src="./img/post2.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="likes flex justify-between p-2">
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-regular fa-comment text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">398</p>
+                </div>
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-solid fa-retweet text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">78</p>
+                </div>
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-regular fa-heart text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">661</p>
+                </div>
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-solid fa-chart-simple text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">5K</p>
+                </div>
+                <div class="comment flex items-center gap-2">
+                  <i
+                    class="fa-regular fa-bookmark text-gray-500 cursor-pointer text-l mr-1"
+                  >
+                  </i>
+                  <i
+                    class="fa-solid fa-arrow-up-from-bracket text-gray-500 cursor-pointer text-l mr-1"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post1 flex flex-row gap-2 border-b-[2px] border-gray-700">
+            <div>
+              <div class="username">
+                <div class="profile">
+                  <img
+                    src="./img/code.png"
+                    class="w-[50px] rounded-full m-2"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <div class="user pt-3 flex gap-1 justify-start items-center">
+                <div
+                  class="font-bold flex justify-start items-center hover:underline px-3"
+                >
+                  Harrry
+                  <svg
+                    viewBox="0 0 22 22"
+                    aria-label="Verified account"
+                    role="img"
+                    class="r-4qtqp9 w-[16px] r-yyyyoo r-1xvli5t r-bnwqim r-1plcrui r-lrvibr r-1cvl2hr r-f9ja8p r-og9te1 r-9cviqr"
+                    data-testid="icon-verified"
+                  >
+                    <g>
+                      <path
+                        fill="#1DA1F2"
+                        d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="text-gray-600 text-sm">@codewithharry</div>
+                <div class="text-gray-600 text-sm">·</div>
+                <div class="text-gray-600 text-sm">June 05</div>
+              </div>
+              <div class="pl-3 flex gap-1 justify-start items-center">
+                <span>
+                  MIT University just released free online courses. Totally
+                  free. Here are 7 courses you can't afford to miss in 2024:
+                </span>
+              </div>
+              <div class="imgpost">
+                <img
+                  class="p-2 rounded-[30px] w-full"
+                  src="./img/post3.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="likes flex justify-between p-2">
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-regular fa-comment text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">650</p>
+                </div>
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-solid fa-retweet text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">800</p>
+                </div>
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-regular fa-heart text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">10K</p>
+                </div>
+                <div class="comment flex items-center gap-1 cursor-pointer">
+                  <i
+                    class="fa-solid fa-chart-simple text-gray-500 cursor-pointer text-l"
+                  >
+                  </i>
+                  <p class="text-gray-500">20K</p>
+                </div>
+                <div class="comment flex items-center gap-2">
+                  <i
+                    class="fa-regular fa-bookmark text-gray-500 cursor-pointer text-l mr-1"
+                  >
+                  </i>
+                  <i
+                    class="fa-solid fa-arrow-up-from-bracket text-gray-500 cursor-pointer text-l mr-1"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="icons md:hidden w-[99%] border-t-[2px] bg-black border-gray-700 absolute bottom-0 flex justify-evenly gap-8"
+        >
+          <div>
+            <span class="material-symbols-outlined text-3xl"> home </span>
+          </div>
+          <div>
+            <span class="material-symbols-outlined text-3xl"> search </span>
+          </div>
+          <div class="flex items-centers">
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="invert w-[30px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1nao33i r-lwhw9o r-cnnz9e"
+            >
+              <g>
+                <g clip-path="url(#5-clip0_2592_269)" clip-rule="evenodd">
+                  <path
+                    d="M18 4.1H6c-1.05 0-1.9.85-1.9 1.9v12c0 1.05.85 1.9 1.9 1.9h12c1.05 0 1.9-.85 1.9-1.9V6c0-1.05-.85-1.9-1.9-1.9zM6 2h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H6c-2.21 0-4-1.79-4-4V6c0-2.21 1.79-4 4-4z"
+                  ></path>
+                  <path d="M6.68 17.8l8.108-11.58h2.532L9.21 17.8H6.68z"></path>
+                </g>
+                <defs>
+                  <clipPath id="5-clip0_2592_269">
+                    <rect height="20" rx="1" width="20" x="2" y="2"></rect>
+                  </clipPath>
+                </defs>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <span class="material-symbols-outlined text-3xl">
+              notifications
+            </span>
+          </div>
+          <div>
+            <span class="material-symbols-outlined text-3xl"> mail </span>
+          </div>
+        </div>
+        <button
+          class="md:hidden bg-blue-500 cursor-pointer px-4 py-3 text-white font-bold rounded-full absolute bottom-[47px] right-[18px]"
+        >
+          <i class="fa-solid fa-feather-pointed"></i>
+        </button>
       </div>
-      <div class="third w-full p-5">
+      <div
+        class="third w-[50%] p-5 h-[100vh] overflow-auto custom-content custom-scrollbar hidden lg:block"
+      >
         <div class="search">
           <input
             type="text"
-            class="p-3 w-[80%] bg-[#16181c] rounded-full focus:outline-none focus:outline-blue-500"
+            class="p-2 w-[80%] bg-[#16181c] rounded-full focus:outline-none focus:outline-blue-500"
             placeholder="Search "
             outline="none"
           />

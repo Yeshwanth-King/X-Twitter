@@ -1,0 +1,76 @@
+/* Hide scrollbar for all browsers except Firefox */
+.custom-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Example styling for content */
+.custom-content {
+  overflow-y: scroll; /* This enables scrolling for the content */
+  height: 200px; /* Set a fixed height for demonstration */
+  background-color: black;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Arrow at the top */
+::-webkit-scrollbar-button:start:decrement {
+  display: block;
+  background-color: #333;
+  border: none;
+}
+
+::-webkit-scrollbar-button:start:increment {
+  display: none;
+}
+
+/* Arrow at the bottom */
+::-webkit-scrollbar-button:end:increment {
+  display: block;
+  background-color: #333;
+  border: none;
+}
+
+::-webkit-scrollbar-button:end:decrement {
+  display: none;
+}
+
+/* Arrows */
+::-webkit-scrollbar-button {
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+
+::-webkit-scrollbar-button:before {
+  content: "\25B2"; /* Unicode for up arrow */
+  color: #fff; /* Color of the arrow */
+}
+
+::-webkit-scrollbar-button:after {
+  content: "\25BC"; /* Unicode for down arrow */
+  color: #fff; /* Color of the arrow */
+}
